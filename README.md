@@ -1,36 +1,15 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 정리중
 
-## Getting Started
+## 추가 사용된 패키지
 
-First, run the development server:
+### Dependencies (애플리케이션 실행에 필요한 패키지)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- `lucide-react` : 아이콘 라이브러리(사이드 바 - 집, 폴더, 메일 아이콘)
+- `react-syntax-highlighter`
+  - 코드 구분 강조 라이브러리 (코드 블록 가독성 상승)
+  - 여러 스타일 테마 제공 (`github`, `dracula`, `atomOneDark`, `solarizedDark` 등)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### DevDependencies (개발 환경에서만 필요한 패키지)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `tailwindcss` : 유틸리티-우선(utility-first) CSS 프레임워크. 전반적인 UI 스타일링과 레이아웃을 구성하는 데 사용 (globals.css와 컴포넌트의 className 속성에서 활용)
+- `@types/react-syntax-highlighter` : `react-syntax-highlighter` 라이브러리를 TypesScript 환경에서 사용하기 위한 타입 정의 파일. 코드 자동 완성 및 체크

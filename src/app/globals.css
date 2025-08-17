@@ -28,3 +28,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .nav-button {
+    @apply flex items-center gap-2 p-3 hover:bg-gray-700 w-full justify-center group-hover:justify-start rounded-xl;
+  }
+  .section-title {
+    @apply text-3xl font-bold mb-4;
+  }
+  .skill-card {
+    @apply p-4 border rounded-xl text-center;
+  }
+  .project-card {
+    @apply border p-6 rounded-xl shadow;
+  }
+  .copy-button {
+    @apply px-2 py-1 bg-gray-200 rounded text-sm;
+  }
+  .code-block {
+    @apply bg-gray-100 p-4 rounded text-sm mb-4;
+  }
+}

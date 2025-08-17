@@ -2,37 +2,50 @@
 
 import { useState } from "react";
 import { Home, Folder, Mail } from "lucide-react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function Page() {
-  const [active, setActive] = useState("about");
+  const EMAIL = "sonani3136@gamil.com";
+  const TEL = "010-3136-6026";
+  const [copiedText, setCopiedText] = useState<string | null>(null);
+
+  const codeSnippet = `function helloWorld() {
+  console.log("Hello, world!");
+}`;
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleCopy = (text: string) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedText(text);
+      setTimeout(() => setCopiedText(null), 2000);
+    });
+  };
 
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
       <nav className="bg-gray-900 text-white flex flex-col items-center py-6 transition-all duration-300 group hover:w-40 w-16">
-        <button
-          onClick={() => setActive("about")}
-          className={`flex items-center gap-2 p-3 hover:bg-gray-700 w-full justify-center group-hover:justify-start rounded-xl ${
-            active === "about" ? "bg-gray-700" : ""
-          }`}
-        >
+        <button onClick={() => scrollToSection("about")} className="nav-button">
           <Home className="h-6 w-6" />
           <span className="hidden group-hover:inline">About</span>
         </button>
         <button
-          onClick={() => setActive("projects")}
-          className={`flex items-center gap-2 p-3 hover:bg-gray-700 w-full justify-center group-hover:justify-start rounded-xl ${
-            active === "projects" ? "bg-gray-700" : ""
-          }`}
+          onClick={() => scrollToSection("projects")}
+          className="nav-button"
         >
           <Folder className="h-6 w-6" />
           <span className="hidden group-hover:inline">Projects</span>
         </button>
         <button
-          onClick={() => setActive("contact")}
-          className={`flex items-center gap-2 p-3 hover:bg-gray-700 w-full justify-center group-hover:justify-start rounded-xl ${
-            active === "contact" ? "bg-gray-700" : ""
-          }`}
+          onClick={() => scrollToSection("contact")}
+          className="nav-button"
         >
           <Mail className="h-6 w-6" />
           <span className="hidden group-hover:inline">Contact</span>
@@ -41,68 +54,62 @@ export default function Page() {
 
       {/* Main Content */}
       <main className="flex-1 p-10 overflow-y-auto">
-        {active === "about" && (
-          <section>
-            <h1 className="text-3xl font-bold mb-4">About Me</h1>
-            <p className="mb-4">여기에 자기소개 텍스트</p>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="p-4 border rounded-xl text-center">React</div>
-              <div className="p-4 border rounded-xl text-center">Next.js</div>
-              <div className="p-4 border rounded-xl text-center">
-                TypeScript
-              </div>
-              <div className="p-4 border rounded-xl text-center">Node.js</div>
-              <div className="p-4 border rounded-xl text-center">Git</div>
-              <div className="p-4 border rounded-xl text-center">Tailwind</div>
-            </div>
-          </section>
-        )}
+        <section id="about" className="min-h-screen">
+          <h1 className="section-title">About Me</h1>
+          <p className="mb-4">여기에 자기소개 텍스트</p>
+          <div className="grid grid-cols-3 gap-4">
+            <div className="skill-card">React</div>
+            <div className="skill-card">Next.js</div>
+            <div className="skill-card">TypeScript</div>
+            <div className="skill-card">Node.js</div>
+            <div className="skill-card">Git</div>
+            <div className="skill-card">Tailwind</div>
+          </div>
+        </section>
 
-        {active === "projects" && (
-          <section>
-            <h1 className="text-3xl font-bold mb-4">Projects</h1>
-            <div className="space-y-8">
-              <div className="border p-6 rounded-xl shadow">
-                <h2 className="text-xl font-semibold">프로젝트 제목</h2>
-                <p className="mb-2">한 줄 설명</p>
-                <div className="aspect-video bg-gray-200 flex items-center justify-center mb-4">
-                  YouTube Embed 자리
-                </div>
-                <pre className="bg-gray-100 p-4 rounded text-sm mb-4">
-                  {`function helloWorld() {
-  console.log("Hello, world!")
-}`}
-                </pre>
-                <a href="#" className="text-blue-600 underline">
-                  GitHub 링크
-                </a>
+        <section id="projects" className="min-h-screen">
+          <h1 className="section-title">Projects</h1>
+          <div className="space-y-8">
+            <div className="project-card">
+              <h2 className="text-xl font-semibold">프로젝트 제목</h2>
+              <p className="mb-2">한 줄 설명</p>
+              <div className="aspect-video bg-gray-200 flex items-center justify-center mb-4">
+                YouTube Embed 자리
               </div>
+              <SyntaxHighlighter
+                language="javascript"
+                style={atomDark}
+                customStyle={{ borderRadius: "0.25rem" }}
+              >
+                {codeSnippet}
+              </SyntaxHighlighter>
+              <a href="#" className="text-blue-600 underline">
+                GitHub 링크
+              </a>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
 
-        {active === "contact" && (
-          <section>
-            <h1 className="text-3xl font-bold mb-4">Contact</h1>
-            <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <span>📧 email@example.com</span>
-                <button className="px-2 py-1 bg-gray-200 rounded text-sm">
-                  복사
-                </button>
-              </div>
-              <div className="flex items-center gap-2">
-                <span>📱 010-1234-5678</span>
-                <button className="px-2 py-1 bg-gray-200 rounded text-sm">
-                  복사
-                </button>
-              </div>
-              <div className="w-full h-64 bg-gray-300 flex items-center justify-center">
-                카카오맵 자리
-              </div>
+        <section id="contact" className="min-h-screen">
+          <h1 className="section-title">Contact</h1>
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <span>📧 {EMAIL}</span>
+              <button onClick={() => handleCopy(EMAIL)} className="copy-button">
+                {copiedText === EMAIL ? "복사됨!" : "복사"}
+              </button>
             </div>
-          </section>
-        )}
+            <div className="flex items-center gap-2">
+              <span>📱 {TEL}</span>
+              <button onClick={() => handleCopy(TEL)} className="copy-button">
+                {copiedText === TEL ? "복사됨!" : "복사"}
+              </button>
+            </div>
+            <div className="w-full h-64 bg-gray-300 flex items-center justify-center">
+              카카오맵 자리
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
