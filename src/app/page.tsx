@@ -7,8 +7,6 @@ import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import KakaoMap from "../components/KakaoMap";
 import projectsData from "../data/projects.json" assert { type: "json" };
 
-import { ThemeToggleButton } from "./components/theme-toggle-button";
-
 export default function Page() {
   const EMAIL = "sonani3136@gamil.com";
   const TEL = "010-3136-6026";
@@ -56,13 +54,10 @@ export default function Page() {
             <span className="hidden group-hover:inline">Contact</span>
           </button>
         </div>
-        <div className="mt-auto">
-          <ThemeToggleButton />
-        </div>
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1 p-10 max-w-7xl mx-auto bg-sky-200">
+      <main className="flex-1 p-10 max-w-7xl mx-auto">
         <section id="about" className="py-20">
           <h1 className="section-title">About Me</h1>
           <p className="mb-4">여기에 자기소개 텍스트</p>
