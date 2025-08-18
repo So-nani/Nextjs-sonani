@@ -71,8 +71,11 @@ export default function Page() {
       {/* Main Content */}
       <main className="flex-1 p-10 max-w-7xl mx-auto">
         <section id="about" className="py-20">
-          <h1 className="section-title">About Me</h1>
-          <p className="mb-4">여기에 자기소개 텍스트</p>
+          <h1 className="section-title mb-5">손한이</h1>
+          
+          <h2 className="mb-5">{ADDRESS} | {TEL} | {EMAIL}</h2>
+          <p className="mb-0">시시각각 변화하는 IT 산업에 빠르게 적응해나갈 수 있게 부단히 노력하고 있습니다.</p>
+          <p className="mb-0">사용자의 입장에서 생각하여 맥락을 파악하고, 더 나은 서비스를 만들기 위한 고민을 멈추지 않겠습니다. </p>
         </section>
 
         <hr className="my-10 border-gray-300" />
@@ -89,9 +92,10 @@ export default function Page() {
                   src={skill.logo}
                   alt={skill.name}
                   width={80}
-                  height={80}
-                  className="mb-2"
+                  height={30}
+                  className="object-contain"
                   unoptimized
+                  
                 />
               </div>
             ))}
