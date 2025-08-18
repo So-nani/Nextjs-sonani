@@ -8,7 +8,7 @@ import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 export default function Page() {
   const EMAIL = "sonani3136@gamil.com";
   const TEL = "010-3136-6026";
-  const [copiedText, setCopiedText] = useState<string | null>(null);
+  const [copiedText, setCopiedText] = useState<string | null>("");
 
   const codeSnippet = `function helloWorld() {
   console.log("Hello, world!");
