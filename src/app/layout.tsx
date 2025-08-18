@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { KakaoMapProvider } from "../components/context/kakao-map-context";
+import { KakaoMapProvider } from "@/components/context/kakao-map-context";
 import "./globals.css";
 
 export const metadata: Metadata = {
