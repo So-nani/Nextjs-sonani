@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fafc;
+  --foreground: #1e293b;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f172a;
+    --foreground: #e2e8f0;
   }
 }
 
@@ -31,21 +31,30 @@ body {
 
 @layer components {
   .nav-button {
-    @apply flex items-center gap-2 p-3 hover:bg-gray-700 w-full justify-center group-hover:justify-start rounded-xl;
+    @apply flex items-center gap-2 p-3 hover:bg-slate-700 w-full justify-center group-hover:justify-start rounded-xl;
   }
   .section-title {
-    @apply text-3xl font-bold mb-4;
+    @apply text-3xl font-bold mb-4 text-slate-800 
+    dark:text-slate-800;
   }
   .skill-card {
-    @apply p-4 border rounded-xl text-center;
+    @apply p-4 border rounded-xl text-center bg-sky-100 text-sky-900 border-sky-200 font-medium 
+    dark:text-slate-200 dark:border-slate-700;
   }
-  .project-card {
-    @apply border p-6 rounded-xl shadow;
+  .main-card {
+    @apply bg-white p-6 rounded-lg shadow-sm border 
+    dark:bg-slate-800/50 dark:border-slate-700;
   }
   .copy-button {
-    @apply px-2 py-1 bg-gray-200 rounded text-sm;
+    @apply px-2 py-1 bg-slate-200 hover:bg-slate-300 rounded text-sm
+    dark:bg-slate-700 dark:hover:bg-slate-600 dark:text-slate-200;
   }
   .code-block {
-    @apply bg-gray-100 p-4 rounded text-sm mb-4;
+    @apply bg-gray-100 p-4 rounded text-sm mb-4
+    dark:bg-slate-800;
+  }
+  .icon-contact {
+    @apply h-5 w-5 text-slate-500
+    dark:text-slate-400;
   }
 }

@@ -8,6 +8,11 @@
 - `react-syntax-highlighter`
   - 코드 구분 강조 라이브러리 (코드 블록 가독성 상승)
   - 여러 스타일 테마 제공 (`github`, `dracula`, `atomOneDark`, `solarizedDark` 등)
+- `kakao.maps.d.ts`
+  - 카카오 맵 API 타입스크립트 패키지
+- `next-themes`
+  - 라이트/다크 모드 테마 전환을 위해 설치
+  - 별도의 tailwind.config.ts 파일 생성 후 `next-themes` 와 연동, darkMode:'class'로 지정
 
 ### DevDependencies (개발 환경에서만 필요한 패키지)
 

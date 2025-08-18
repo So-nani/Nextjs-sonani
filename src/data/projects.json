@@ -1,0 +1,23 @@
+[
+  {
+    "project_title": "포트폴리오 웹사이트",
+    "description": "Next.js와 Tailwind CSS를 사용하여 제작한 개인 포트폴리오 웹사이트입니다.",
+    "youtube_embed": "",
+    "code": "const project = {\n  name: \"Portfolio\",\n  stack: [\"Next.js\", \"TypeScript\"]\n};",
+    "github_link": "https://github.com/your-username/your-repo"
+  },
+  {
+    "project_title": "두 번째 프로젝트",
+    "description": "이곳에 두 번째 프로젝트에 대한 설명을 작성합니다.",
+    "youtube_embed": "",
+    "code": "function secondProject() {\n  return \"Hello World\";\n}",
+    "github_link": "https://github.com/your-username/another-repo"
+  },
+  {
+    "project_title": "세 번째 프로젝트",
+    "description": "이곳에 세 번째 프로젝트에 대한 설명을 작성합니다.",
+    "youtube_embed": "",
+    "code": "function secondProject() {\n  return \"Hello World\";\n}",
+    "github_link": "https://github.com/your-username/another-repo"
+  }
+]
