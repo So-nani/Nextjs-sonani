@@ -31,8 +31,8 @@ function KakaoMap({ latitude, longitude }: KakaoMapProps) {
           const zoomControl = new window.kakao.maps.ZoomControl();
           map.addControl(zoomControl, window.kakao.maps.ControlPosition.RIGHT);
 
-          // 다른 컨트롤들은 비활성화
-          map.setDraggable(false);
+          // 드래그, 줌인아웃, 키보드이동
+          map.setDraggable(true);
           map.setZoomable(true); // 확대/축소는 가능하도록 설정
           map.setKeyboardShortcuts(false);
 

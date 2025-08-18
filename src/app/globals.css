@@ -43,7 +43,7 @@ body {
     @apply border p-6 rounded-xl shadow;
   }
   .copy-button {
-    @apply px-2 py-1 bg-gray-200 rounded text-sm;
+    @apply px-2 py-1 bg-gray-200 rounded text-sm transition-colors duration-300 hover:bg-gray-400;
   }
   .code-block {
     @apply bg-gray-100 p-4 rounded text-sm mb-4;

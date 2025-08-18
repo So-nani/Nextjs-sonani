@@ -74,7 +74,9 @@ export default function Page() {
           <h1 className="section-title">About Me</h1>
           <p className="mb-4">여기에 자기소개 텍스트</p>
         </section>
-        <hr className="my-20 border-gray-300" />
+
+        <hr className="my-10 border-gray-300" />
+
         <section id="skills" className="py-20">
           <h1 className="section-title">Skills</h1>
           <div className="skill-card flex flex-wrap justify-center items-center gap-4">
@@ -96,7 +98,7 @@ export default function Page() {
           </div>
         </section>
 
-        <hr className="my-20 border-gray-300" />
+        <hr className="my-10 border-gray-300" />
         
         <section id="projects" className="py-20">
           <h1 className="section-title">Projects</h1>
@@ -142,7 +144,9 @@ export default function Page() {
             ))}
           </div>
         </section>
-        <hr className="my-20 border-gray-300" />
+
+        <hr className="my-10 border-gray-300" />
+
         <section id="contact" className="py-20">
           <h1 className="section-title">Contact</h1>
           <div className="flex flex-row gap-8 items-start">
@@ -179,8 +183,8 @@ export default function Page() {
 
             {/* Right Side: Map */}
             <div className="w-1/2 h-96">
-              <KakaoMap latitude={37.498085} longitude={127.027977} />
-            </div>
+              <KakaoMap latitude={35.803142} longitude={128.740039} />
+              </div>
           </div>
         </section>
       </main>
