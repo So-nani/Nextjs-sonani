@@ -20,7 +20,7 @@ export function KakaoMapProvider({ children }: { children: ReactNode }) {
     setIsLoaded(true);
   };
 
-  const handleError = (e: any) => {
+  const handleError = (e: Error) => {
     console.error("Script failed to load:", e);
   };
 

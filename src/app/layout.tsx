@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { KakaoMapProvider } from "./components/context/kakao-map-context";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className="h-screen w-screen">{children}</body>
+      <body className="h-screen w-screen">
+        <KakaoMapProvider>{children}</KakaoMapProvider>
+      </body>
     </html>
   );
 }

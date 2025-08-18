@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Home, Folder, Mail } from "lucide-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import KakaoMap from "./components/KakaoMap";
 
 export default function Page() {
   const EMAIL = "sonani3136@gamil.com";
@@ -106,7 +107,7 @@ export default function Page() {
               </button>
             </div>
             <div className="w-full h-64 bg-gray-300 flex items-center justify-center">
-              카카오맵 자리
+              <KakaoMap latitude={37.498085} longitude={127.027977}></KakaoMap>
             </div>
           </div>
         </section>
