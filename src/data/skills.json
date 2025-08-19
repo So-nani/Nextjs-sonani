@@ -19,25 +19,10 @@
     "name": "Canva",
     "logo": "https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white"
   },
-  {
-    "name": "Next.js",
-    "logo": "https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
-  },
+  
   {
     "name": "Java",
     "logo": "https://img.shields.io/badge/Java-F89820?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCI+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTSAyOC4xODc1IC0wLjAwMzkwNjI1IEMgMzAuOTM3NSA2LjM1OTM3NSAxOC4zMjAzMTMgMTAuMjg5MDYzIDE3LjE1MjM0NCAxNS41OTM3NSBDIDE2LjA3NDIxOSAyMC40NjA5MzggMjQuNjQwNjI1IDI2LjEyMTA5NCAyNC42NDQ1MzEgMjYuMTIxMDk0IEMgMjMuMzQzNzUgMjQuMTA1NDY5IDIyLjQwMjM0NCAyMi40NDE0MDYgMjEuMDk3NjU2IDE5LjMwNDY4OCBDIDE4Ljg5MDYyNSAxNCAzNC41MzEyNSA5LjIwMzEyNSAyOC4xODc1IC0wLjAwMzkwNjI1IFogTSAzNi41NTA3ODEgOC44MTI1IEMgMzYuNTUwNzgxIDguODEyNSAyNS41MDM5MDYgOS41MTE3MTkgMjQuOTQxNDA2IDE2LjU4MjAzMSBDIDI0LjY5MTQwNiAxOS43MzA0NjkgMjcuODQzNzUgMjEuNDEwMTU2IDI3LjkzNzUgMjMuNzAzMTI1IEMgMjguMDA3ODEzIDI1LjU3MDMxMyAyNi4wNTA3ODEgMjcuMTI4OTA2IDI2LjA1MDc4MSAyNy4xMjg5MDYgQyAyNi4wNTA3ODEgMjcuMTI4OTA2IDI5LjYwMTU2MyAyNi40NjA5MzggMzAuNzE0ODQ0IDIzLjYwNTQ2OSBDIDMxLjk0NTMxMyAyMC40Mzc1IDI4LjMyODEyNSAxOC4yNzM0MzggMjguNjkxNDA2IDE1LjczODI4MSBDIDI5LjA0Mjk2OSAxMy4zMTI1IDM2LjU1MDc4MSA4LjgxMjUgMzYuNTUwNzgxIDguODEyNSBaIE0gMzkuMjMwNDY5IDI1LjE0NDUzMSBDIDM4LjA3NDIxOSAyNS4wOTM3NSAzNi43ODkwNjMgMjUuNDc2NTYzIDM1LjYyNSAyNi4zMTI1IEMgMzcuOTA2MjUgMjUuODI0MjE5IDM5LjgzNTkzOCAyNy4yMTg3NSAzOS44MzU5MzggMjguODI4MTI1IEMgMzkuODM1OTM4IDMyLjQ1MzEyNSAzNC41OTc2NTYgMzUuODc4OTA2IDM0LjU5NzY1YSAzNS44Nzg5MDYgQyAzNC41OTc2NTYgMzUuODc4OTA2IDQyLjcwNzAzMSAzNC45NTMxMjUgNDIuNzA3MDMxIDI5IEMgNDIuNzA3MDMxIDI2LjUzOTA2MyA0MS4xNTIzNDQgMjUuMjM0Mzc1IDM5LjIzMDQ2OSAyNS4xNDQ1MzEgWiBNIDE5LjE4MzU5NCAyNS4xNTIzNDQgQyAxOS4xODM1OTQgMjUuMTUyMzQ0IDkuMDYyNSAyNS4wMTU2MjUgOS4wNjI1IDI3Ljg3ODkwNiBDIDkuMDYyNSAzMC44NzEwOTQgMjIuMzE2NDA2IDMxLjA4MjAzMSAzMS43ODEyNSAyOS4yMzgyODEgQyAzMS43ODEyNSAyOS4yMzgyODEgMzQuMzA4NTk0IDI3LjUwNzgxMyAzNC45ODA0NjkgMjYuODYzMjgxIEMgMjguNzc3MzQ0IDI4LjEyODkwNiAxNC42MjEwOTQgMjguMjk2ODc1IDE0LjYyMTA5NCAyNy4yMDMxMjUgQyAxNC42MjEwOTQgMjYuMTkxNDA2IDE5LjE4MzU5NCAyNS4xNTIzNDQgMTkuMTgzNTk0IDI1LjE1MjM0NCBaIE0gMTYuNzM4MjgxIDMwLjcyMjY1NiBDIDE1LjE4NzUgMzAuNzIyNjU2IDEyLjg3MTA5NCAzMS45MjE4NzUgMTIuODcxMDk0IDMzLjA3ODEyNSBDIDEyLjg3MTA5NCAzNS40MDIzNDQgMjQuNTYyNSAzNy4xOTUzMTMgMzMuMjE4NzUgMzMuNzk2ODc1IEMgMzAuMjIyNjU2IDMxLjk2MDkzOCBDIDI0LjM1NTQ2OSAzMy44Mzk4NDQgMTMuNTM5MDYzIDMzLjIzODI4MSAxNi43MzgyODEgMzAuNzIyNjU2IFogTSAxOC4xNzk2ODggMzUuOTIxODc1IEMgMTYuMDUwNzgxIDM1LjkyMTg3NSAxNC42NzE4NzUgMzcuMjM0Mzc1IDE0LjY3MTg3NSAzOC4yMDMxMjUgQyAxNC42NzE4NzUgNDEuMTg3NSAyNy4zNzg5MDYgNDEuNDg4MjgxIDMyLjQxNDA2MyAzOC40NTMxMjUgTCAyOS4yMTQ4NDQgMzYuNDE3OTY5IEMgMjUuNDUzMTI1IDM4LjAwNzgxMyAxNi4wMDc4MTMgMzguMjIyNjU2IDE4LjE3OTY4OCAzNS45MjE4NzUgWiBNIDExLjA4OTg0NCAzOC42MjUgQyA3LjYyMTA5NCAzOC41NTQ2ODggNS4zNjcxODggNDAuMTEzMjgxIDUuMzY3MTg4IDQxLjQwNjI1IEMgNS4zNjMyODEgNDguMjgxMjUgNDAuODkwNjI1IDQ3Ljk0OTIxOSA0MC44OTA2MjUgNDAuOTIxODc1IEMgNDAuODkwNjI1IDM5Ljc1NzgxMyAzOS41MTU2MjUgMzkuMjAzMTI1IDM5LjAxOTUzMSAzOC45Mzc1IEMgNDEuOTIxODc1IDQ1LjY1NjI1IDkuOTY4NzUgNDUuMTM2NzE5IDkuOTY4NzUgNDEuMTcxODc1IEMgOS45Njg3NSA0MC4yNjk1MzEgMTIuMzEyNSAzOS4zODI4MTMgMTQuNDkyMTg4IDM5LjgwODU5NCBMIDEyLjY0NDUzMSAzOC43NTc4MTMgQyAxMi4xMDE1NjMgMzguNjc1NzgxIDExLjU4MjAzMSAzOC42MzI4MTMgMTEuMDg5ODQ0IDM4LjYyNSBaIE0gNDQuNjM2NzE5IDQzLjI1IEMgMzkuMjM0Mzc1IDQ4LjM2NzE4OCAyNS41NDY4NzUgNTAuMjM0Mzc1IDExLjc4MTI1IDQ3LjA3NDIxOSBDIDI1LjU0Mjk2OSA1Mi43MDMxMjUgNDQuNTY2NDA2IDQ5LjUzNTE1NiA0NC42MzY3MTkgNDMuMjUgWiI+PC9wYXRoPjwvc3ZnPg=="
-  },
-  {
-    "name": "TypeScript",
-    "logo": "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
-  },
-  {
-    "name": "Tailwind CSS",
-    "logo": "https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white"
-  },
-  {
-    "name": "JavaScript",
-    "logo": "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
   },
   {
     "name": "Html5",
@@ -52,9 +37,26 @@
     "logo": "https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"
   },
   {
+    "name": "Next.js",
+    "logo": "https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
+  },
+  {
     "name": "Eclipse",
     "logo": "https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white"
   },
+  {
+    "name": "TypeScript",
+    "logo": "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
+  },
+  {
+    "name": "Tailwind CSS",
+    "logo": "https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white"
+  },
+  {
+    "name": "JavaScript",
+    "logo": "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+  },
+  
   {
     "name": "IntelliJ IDEA",
     "logo": "https://img.shields.io/badge/IntelliJ-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"

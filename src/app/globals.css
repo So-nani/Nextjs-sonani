@@ -2,7 +2,10 @@
 
 :root {
   --background: #ededed;
-  --foreground: #171717;
+  --foreground: #111827;
+  --card-background: #ffffff;
+  --card-border: #e5e7eb;
+  --subtle-foreground:#6b7280;
 }
 
 @theme inline {
@@ -14,8 +17,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #171717;
+    --background: #1e293b;
     --foreground: #ededed;
+    --card-background: #334155;
+    --card-border: #475569;
+    --subtle-foreground:#94a3b8;
   }
 }
 
@@ -34,21 +40,25 @@ body {
     @apply flex items-center gap-2 p-3 hover:bg-gray-700 w-full justify-center group-hover:justify-start rounded-xl;
   }
   .section-title {
-    @apply text-3xl font-bold mb-4;
+    @apply text-6xl font-bold mb-4;
   }
   .skill-card {
     @apply p-4 border rounded-xl text-center;
   }
   .main-card {
-    @apply border p-6 rounded-xl shadow;
+    @apply border p-6 pb-5 rounded-xl shadow;
   }
   .copy-button {
-    @apply px-2 py-1 bg-gray-200 rounded text-sm transition-colors duration-300 hover:bg-gray-400;
+    @apply px-2 py-1 bg-gray-200 text-gray-800 rounded text-sm transition-colors duration-300 hover:bg-gray-400;
   }
   .code-block {
     @apply bg-gray-100 p-4 rounded text-sm mb-4;
   }
   .icon-contact{
     @apply h-5 w-5 text-gray-500;
+  }
+  .mission-statement {
+    @apply border-l-4 pl-4 italic text-xl text-gray-900 dark:text-gray-400;
+    border-color:#4f46e5;
   }
 }
