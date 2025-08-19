@@ -3,7 +3,7 @@
     "project_title": "PetShop 프로젝트",
     "description": "Bootstrap 라이브러리, 기본 JS, CSS를 활용한 사이트 구현",
     "used_skill":"Bootstrap, Html5, CSS3, JavaScript",
-    "youtube_embed": "",
+    "youtube_embed": "https://www.youtube.com/embed/Sz42kaN5rwg",
     "code": "const project = {\n  name: \"Portfolio\",\n  stack: [\"Next.js\", \"TypeScript\"]\n};",
     "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/JS%26CSS"
   },
@@ -11,7 +11,7 @@
     "project_title": "도서·문구 온라인 판매점 DB 프로젝트",
     "description": "ERDCloud를 통해 다이어그램을 설계, Oracle DB로 구현",
     "used_skill":"Oracle_v21c, SqlDeveloper",
-    "youtube_embed": "",
+    "youtube_embed": "https://www.youtube.com/embed/y93tmHPaslM",
     "code": "function secondProject() {\n  return \"Hello World\";\n}",
     "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/OracleDB"
     
