@@ -89,7 +89,7 @@ export default function Page() {
               </div>
             </section>
             <a
-              href="#"
+              href="https://github.com/So-nani/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-4 text-gray-400 dark:hover:text-black hover:text-white transition-colors"

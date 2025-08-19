@@ -1,23 +1,43 @@
 [
   {
-    "project_title": "포트폴리오 웹사이트",
-    "description": "Next.js와 Tailwind CSS를 사용하여 제작한 개인 포트폴리오 웹사이트입니다.",
+    "project_title": "PetShop 프로젝트",
+    "description": "Bootstrap 라이브러리, 기본 JS, CSS를 활용한 사이트 구현",
+    "used_skill":"Bootstrap, Html5, CSS3, JavaScript",
     "youtube_embed": "",
     "code": "const project = {\n  name: \"Portfolio\",\n  stack: [\"Next.js\", \"TypeScript\"]\n};",
-    "github_link": "https://github.com/your-username/your-repo"
+    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/JS%26CSS"
   },
   {
-    "project_title": "두 번째 프로젝트",
-    "description": "이곳에 두 번째 프로젝트에 대한 설명을 작성합니다.",
+    "project_title": "도서·문구 온라인 판매점 DB 프로젝트",
+    "description": "ERDCloud를 통해 다이어그램을 설계, Oracle DB로 구현",
+    "used_skill":"Oracle_v21c, SqlDeveloper",
     "youtube_embed": "",
     "code": "function secondProject() {\n  return \"Hello World\";\n}",
-    "github_link": "https://github.com/your-username/another-repo"
+    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/OracleDB"
+    
   },
   {
-    "project_title": "세 번째 프로젝트",
-    "description": "이곳에 세 번째 프로젝트에 대한 설명을 작성합니다.",
+    "project_title": "헌혈 정보 관리 프로그램",
+    "description": "Springboot 기반 헌혈 예약/변경/취소, 혈액 재고량, 폐기 신청이 가능한 관리 프로그램",
+    "used_skill":"STS4, Apache Tomcat, Oracle_v21c, SqlDeveloper",
     "youtube_embed": "",
     "code": "function secondProject() {\n  return \"Hello World\";\n}",
-    "github_link": "https://github.com/your-username/another-repo"
+    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Java"
+  },
+  {
+    "project_title": "직업 추천 AI 프로젝트",
+    "description": "자연어 처리, 형태소 분석 알고리즘을 이용한 사용자 직업 추천 프로그램",
+    "used_skill":"Python, Google Colab, Model: KoBERT, KoNLPy, sentence-BERT, ko-sentence-transformers",
+    "youtube_embed": "",
+    "code": "/* 가나다라마바사 */ \nfunction secondProject() {\n  return \"Hello World\";\n}",
+    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Python"
+  },
+  {
+    "project_title": "공모전 추천 플랫폼 <Equal-Local>",
+    "description": "지역 균등 발전을 위한 공모전 추천 및 팀 구성 서비스 제공 플랫폼",
+    "used_skill":"Node.js, Next.js, TypeScript, Docker, Springboot, postgreSQL, redisDB",
+    "youtube_embed": "",
+    "code": "function secondProject() {\n  return \"Hello World\";\n}",
+    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Final_Project"
   }
 ]
