@@ -82,18 +82,19 @@ export default function Page() {
 
         <section id="skills" className="py-20">
           <h1 className="section-title">Skills</h1>
-          <div className="skill-card flex flex-wrap justify-center items-center gap-4">
+          <div className="skill-card flex flex-wrap justify-center items-center gap-2">
             {skillsData.map((skill, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center p-4"
+                className="flex flex-col items-center justify-center p-1"
               >
                 <Image
                   src={skill.logo}
                   alt={skill.name}
-                  width={80}
-                  height={30}
-                  className="object-contain"
+                  width={90}
+                  height={28}
+                  sizes="90px"
+                  className="object-contain h-[28px] w-[90px]"
                   unoptimized
                   
                 />
