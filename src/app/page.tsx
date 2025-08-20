@@ -95,7 +95,7 @@ export default function Page() {
               className="inline-flex items-center gap-2 mt-4 text-gray-400 dark:hover:text-black hover:text-white transition-colors"
             >
               <div className="bg-gray-800 dark:bg-gray-200 rounded-full p-2">
-              <Github className="h-9 w-9" />
+                <Github className="h-9 w-9" />
               </div>
             </a>
           </div>
@@ -136,29 +136,36 @@ export default function Page() {
                       {project.project_title}
                     </h2>
                     <p className="mb-2">{project.description}</p>
-                    {project.youtube_embed ? (
-                      <div className="aspect-video bg-gray-200 flex items-center justify-center mb-4">
-                        <iframe
-                          width="100%"
-                          height="100%"
-                          src={project.youtube_embed}
-                          title={project.project_title}
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        ></iframe>
-                      </div>
-                    ) : (
-                      <div className="aspect-video bg-gray-200 flex items-center justify-center mb-4">
-                        YouTube Embed 자리
-                      </div>
-                    )}
-                    <SyntaxHighlighter
-                      language="javascript"
-                      style={atomDark}
-                      customStyle={{ borderRadius: "0.25rem" }}
-                    >
-                      {project.code}
-                    </SyntaxHighlighter>
+                    <p className="mb-2 text-zinc-500 font-stretch-50%">{project.used_skill}</p>
+                    <div className="flex gap-4 mb-4">
+                      {project.youtube_embed ? (
+                        <div className="aspect-video bg-gray-200 flex items-center justify-center flex-1">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src={project.youtube_embed}
+                            title={project.project_title}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      ) : (
+                        <div className="aspect-video bg-gray-200 flex items-center justify-center flex-1">
+                          YouTube Embed 자리
+                        </div>
+                      )}
+                      {project.image_src && (
+                        <div className="flex-1">
+                          <Image
+                            src={project.image_src}
+                            alt={project.project_title}
+                            width={560}
+                            height={315}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                      )}
+                    </div>
                     <a
                       href={project.github_link}
                       target="_blank"

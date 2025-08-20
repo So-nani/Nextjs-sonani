@@ -5,7 +5,8 @@
     "used_skill":"Bootstrap, Html5, CSS3, JavaScript",
     "youtube_embed": "https://www.youtube.com/embed/Sz42kaN5rwg",
     "code": "const project = {\n  name: \"Portfolio\",\n  stack: [\"Next.js\", \"TypeScript\"]\n};",
-    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/JS%26CSS"
+    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/JS%26CSS",
+    "image_src": "/overview_images/project_1.png"
   },
   {
     "project_title": "도서·문구 온라인 판매점 DB 프로젝트",
@@ -13,8 +14,8 @@
     "used_skill":"Oracle_v21c, SqlDeveloper",
     "youtube_embed": "https://www.youtube.com/embed/y93tmHPaslM",
     "code": "function secondProject() {\n  return \"Hello World\";\n}",
-    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/OracleDB"
-    
+    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/OracleDB",
+    "image_src": "/overview_images/project_2.png"
   },
   {
     "project_title": "헌혈 정보 관리 프로그램",
@@ -22,7 +23,8 @@
     "used_skill":"STS4, Apache Tomcat, Oracle_v21c, SqlDeveloper",
     "youtube_embed": "",
     "code": "function secondProject() {\n  return \"Hello World\";\n}",
-    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Java"
+    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Java",
+    "image_src": "/overview_images/project_3.png"
   },
   {
     "project_title": "직업 추천 AI 프로젝트",
@@ -30,7 +32,8 @@
     "used_skill":"Python, Google Colab, Model: KoBERT, KoNLPy, sentence-BERT, ko-sentence-transformers",
     "youtube_embed": "",
     "code": "/* 가나다라마바사 */ \nfunction secondProject() {\n  return \"Hello World\";\n}",
-    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Python"
+    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Python",
+    "image_src": "/overview_images/project_4.png"
   },
   {
     "project_title": "공모전 추천 플랫폼 <Equal-Local>",
@@ -38,6 +41,7 @@
     "used_skill":"Node.js, Next.js, TypeScript, Docker, Springboot, postgreSQL, redisDB",
     "youtube_embed": "",
     "code": "function secondProject() {\n  return \"Hello World\";\n}",
-    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Final_Project"
+    "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Final_Project",
+    "image_src": "/overview_images/project_5.png"
   }
 ]
