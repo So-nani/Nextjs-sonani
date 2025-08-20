@@ -3,16 +3,14 @@
 import { useState } from "react";
 import { Home, Folder, Mail, Phone, MapPin, Code, Github } from "lucide-react";
 import Image from "next/image";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import KakaoMap from "@/components/KakaoMap";
 import projectsData from "@/data/projects.json" assert { type: "json" };
 import skillsData from "@/data/skills.json";
 
 export default function Page() {
-  const EMAIL = "sonani3136@gamil.com";
-  const TEL = "010-3136-6026";
-  const ADDRESS = "경북 경산시 경청로 222길 8";
+  const EMAIL = process.env.NEXT_PUBLIC_EMAIL || "";
+  const TEL = process.env.NEXT_PUBLIC_TEL || "";
+  const ADDRESS = process.env.NEXT_PUBLIC_ADDRESS || "";
 
   const [copiedText, setCopiedText] = useState<string | null>("");
 
@@ -33,9 +31,25 @@ export default function Page() {
   };
 
   return (
-    <div className="flex">
-      {/* Sidebar */}
-      <nav className="sticky top-0 h-screen bg-slate-900 text-white flex flex-col items-center py-6 transition-all duration-300 group hover:w-40 w-16">
+    <div className="flex flex-col md:flex-row">
+      {/* Mobile Top Nav */}
+      <nav className="fixed top-0 left-0 right-0 bg-slate-900 text-white flex justify-around items-center p-2 md:hidden z-50">
+        <button onClick={() => scrollToSection("about")} className="p-2">
+          <Home className="h-6 w-6" />
+        </button>
+        <button onClick={() => scrollToSection("skills")} className="p-2">
+          <Code className="h-6 w-6" />
+        </button>
+        <button onClick={() => scrollToSection("projects")} className="p-2">
+          <Folder className="h-6 w-6" />
+        </button>
+        <button onClick={() => scrollToSection("contact")} className="p-2">
+          <Mail className="h-6 w-6" />
+        </button>
+      </nav>
+
+      {/* Desktop Sidebar */}
+      <nav className="sticky top-0 h-screen bg-slate-900 text-white hidden md:flex flex-col items-center py-6 transition-all duration-300 group hover:w-40 w-16">
         <div>
           <button
             onClick={() => scrollToSection("about")}
@@ -69,7 +83,7 @@ export default function Page() {
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1 overflow-y-auto">
+      <main className="flex-1 overflow-y-auto pt-16 md:pt-0">
         <div>
           <div id="about" className="max-w-7xl mx-auto p-10">
             <section className="py-20">
@@ -136,8 +150,10 @@ export default function Page() {
                       {project.project_title}
                     </h2>
                     <p className="mb-2">{project.description}</p>
-                    <p className="mb-2 text-zinc-500 font-stretch-50%">{project.used_skill}</p>
-                    <div className="flex gap-4 mb-4">
+                    <p className="mb-2 text-zinc-500 font-stretch-50%">
+                      {project.used_skill}
+                    </p>
+                    <div className="flex flex-col md:flex-row gap-4 mb-4">
                       {project.youtube_embed ? (
                         <div className="aspect-video bg-gray-200 flex items-center justify-center flex-1">
                           <iframe
@@ -186,9 +202,9 @@ export default function Page() {
           <div id="contact" className="max-w-7xl mx-auto p-10">
             <section className="py-20">
               <h1 className="section-title">Contact</h1>
-              <div className="flex flex-row gap-8 items-start">
+              <div className="flex flex-col md:flex-row gap-8 items-start">
                 {/* Left Side: Contact Info */}
-                <div className="w-1/2 space-y-4 main-card">
+                <div className="w-full md:w-1/2 space-y-4 main-card">
                   <div className="flex items-center gap-2">
                     <Mail className="h-5 w-5 text-slate-500" />
                     <span>{EMAIL}</span>
@@ -222,7 +238,7 @@ export default function Page() {
                 </div>
 
                 {/* Right Side: Map */}
-                <div className="w-1/2 h-96">
+                <div className="w-full md:w-1/2 h-96">
                   <KakaoMap latitude={35.803142} longitude={128.740039} />
                 </div>
               </div>

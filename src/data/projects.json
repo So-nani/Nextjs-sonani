@@ -4,7 +4,6 @@
     "description": "Bootstrap 라이브러리, 기본 JS, CSS를 활용한 사이트 구현",
     "used_skill":"Bootstrap, Html5, CSS3, JavaScript",
     "youtube_embed": "https://www.youtube.com/embed/Sz42kaN5rwg",
-    "code": "const project = {\n  name: \"Portfolio\",\n  stack: [\"Next.js\", \"TypeScript\"]\n};",
     "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/JS%26CSS",
     "image_src": "/overview_images/project_1.png"
   },
@@ -13,16 +12,14 @@
     "description": "ERDCloud를 통해 다이어그램을 설계, Oracle DB로 구현",
     "used_skill":"Oracle_v21c, SqlDeveloper",
     "youtube_embed": "https://www.youtube.com/embed/y93tmHPaslM",
-    "code": "function secondProject() {\n  return \"Hello World\";\n}",
     "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/OracleDB",
     "image_src": "/overview_images/project_2.png"
   },
   {
     "project_title": "헌혈 정보 관리 프로그램",
     "description": "Springboot 기반 헌혈 예약/변경/취소, 혈액 재고량, 폐기 신청이 가능한 관리 프로그램",
-    "used_skill":"STS4, Apache Tomcat, Oracle_v21c, SqlDeveloper",
-    "youtube_embed": "",
-    "code": "function secondProject() {\n  return \"Hello World\";\n}",
+    "used_skill":"Eclipse, Apache Tomcat, Oracle_v21c, SqlDeveloper",
+    "youtube_embed": "https://www.youtube.com/embed/WdcGSIiFJHc",
     "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Java",
     "image_src": "/overview_images/project_3.png"
   },
@@ -30,8 +27,7 @@
     "project_title": "직업 추천 AI 프로젝트",
     "description": "자연어 처리, 형태소 분석 알고리즘을 이용한 사용자 직업 추천 프로그램",
     "used_skill":"Python, Google Colab, Model: KoBERT, KoNLPy, sentence-BERT, ko-sentence-transformers",
-    "youtube_embed": "",
-    "code": "/* 가나다라마바사 */ \nfunction secondProject() {\n  return \"Hello World\";\n}",
+    "youtube_embed": "https://www.youtube.com/embed/uYOyfGvmFag",
     "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Python",
     "image_src": "/overview_images/project_4.png"
   },
@@ -39,8 +35,7 @@
     "project_title": "공모전 추천 플랫폼 <Equal-Local>",
     "description": "지역 균등 발전을 위한 공모전 추천 및 팀 구성 서비스 제공 플랫폼",
     "used_skill":"Node.js, Next.js, TypeScript, Docker, Springboot, postgreSQL, redisDB",
-    "youtube_embed": "",
-    "code": "function secondProject() {\n  return \"Hello World\";\n}",
+    "youtube_embed": "https://www.youtube.com/embed/3XuTsI3lNzw",
     "github_link": "https://github.com/So-nani/Project_List/tree/main/KB/Final_Project",
     "image_src": "/overview_images/project_5.png"
   }
