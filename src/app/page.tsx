@@ -87,19 +87,42 @@ export default function Page() {
         <div>
           <div id="about" className="max-w-7xl mx-auto p-10">
             <section className="py-20">
-              <h1 className="text-8xl font-bold mb-5">손한이</h1>
-              <h2 className="mb-9">
-                {ADDRESS} | {TEL} | {EMAIL}
-              </h2>
-              <div className="mission-statement mt-8">
-                <p className="mb-0">
-                  시시각각 변화하는 IT 산업에 빠르게 적응해나갈 수 있게 부단히
-                  노력하고 있습니다.
-                </p>
-                <p className="mb-0">
-                  사용자의 입장에서 생각하여 맥락을 파악하고, 더 나은 서비스를
-                  만들기 위한 고민을 멈추지 않겠습니다.
-                </p>
+              <div className="flex flex-col md:flex-row items-start gap-10">
+                <div className="flex-1">
+                  <h1 className="text-8xl font-bold mb-5">손한이</h1>
+                  <h2 className="mb-9">
+                    {ADDRESS} | {TEL} | {EMAIL}
+                  </h2>
+                  <div className="mission-statement mt-8">
+                    <p className="mb-0">
+                      시시각각 변화하는 IT 산업에 빠르게 적응해나갈 수 있게
+                      부단히 노력하고 있습니다.
+                    </p>
+                    <p className="mb-0">
+                      사용자의 입장에서 생각하여 맥락을 파악하고, 더 나은
+                      서비스를 만들기 위한 고민을 멈추지 않겠습니다.
+                    </p>
+                  </div>
+                  <div className="mt-8">
+                    <h3 className="text-2xl font-bold mb-3">학력</h3>
+                    <p>대구가톨릭대학교 회계세무학과 졸업 - 2025.08</p>
+                  </div>
+                  <div className="mt-8">
+                    <h3 className="text-2xl font-bold mb-3">자격증</h3>
+                    <p>컴퓨터활용능력 2급 - 2025.02</p>
+                    <p>전산회계 2급 - 2025.02</p>
+                    <p>정보처리기사 필기 합격 - 2025.08</p>
+                  </div>
+                </div>
+                <div className="w-full md:w-1/4 flex justify-center">
+                  <Image
+                    src="/overview_images/profile.jpg"
+                    alt="증명사진"
+                    width={200}
+                    height={250}
+                    className="rounded-lg object-cover"
+                  />
+                </div>
               </div>
             </section>
             <a

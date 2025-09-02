@@ -20,4 +20,4 @@
 # 배포 현황
 
 - vercel 통해 배포
-- [포트폴리오](https://nextjs-om5ufh7e4-so-nanis-projects.vercel.app/)
+- [포트폴리오](https://nextjs-app-so-nani-projects.vercel.app/)
